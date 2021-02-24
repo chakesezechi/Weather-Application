@@ -8,6 +8,14 @@ const temperatureValue = document.querySelector(".temperature-value p");
 const temperatureDescription = document.querySelector(".temperature-description p");
 const locationElement = document.querySelector(".location p");
 
+// const searchInput = document.querySelector("#search-input");
+// const searchButton = document.querySelector("#search-button");
+
+
+
+
+
+
 
 // App data
 const weather = {};
@@ -49,9 +57,9 @@ function showError(error){
 // GET WEATHER FROM API PROVIDER
 function getWeather(latitude, longitude){
 
-  const proxy = "https://cors-anywhere.herokuapp.com/";
+  //const proxy = "https://cors-anywhere.herokuapp.com/";
   
-  const api = `${proxy}https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+  const api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
 
 
   fetch(api)
